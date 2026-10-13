@@ -1,0 +1,90 @@
+[
+  {
+    "patent_id": "P001",
+    "title": "Machine Learning Vehicle Detection System",
+    "abstract": "A system for detecting vehicles using cameras and machine learning algorithms.",
+    "claims": "A system for detecting vehicles using a camera, image processing and machine learning.",
+    "keywords": [
+      "vehicle",
+      "camera",
+      "detection",
+      "machine learning"
+    ],
+    "technology": "Artificial Intelligence",
+    "year": 2021,
+    "citations": [
+      "P003",
+      "P005"
+    ]
+  },
+  {
+    "patent_id": "P002",
+    "title": "Smart Traffic Monitoring System",
+    "abstract": "A smart traffic monitoring system using cameras to analyze road traffic.",
+    "claims": "A traffic monitoring system comprising cameras and an image processing module.",
+    "keywords": [
+      "traffic",
+      "camera",
+      "monitoring",
+      "image processing"
+    ],
+    "technology": "Computer Vision",
+    "year": 2020,
+    "citations": [
+      "P001",
+      "P004"
+    ]
+  },
+  {
+    "patent_id": "P003",
+    "title": "Autonomous Vehicle Recognition",
+    "abstract": "A computer vision system for recognizing vehicles in real-time.",
+    "claims": "A vehicle recognition system using image processing and machine learning.",
+    "keywords": [
+      "vehicle",
+      "recognition",
+      "machine learning",
+      "image processing"
+    ],
+    "technology": "Computer Vision",
+    "year": 2019,
+    "citations": [
+      "P005",
+      "P006"
+    ]
+  },
+  {
+    "patent_id": "P004",
+    "title": "Real-Time Object Detection",
+    "abstract": "A real-time object detection system using video cameras.",
+    "claims": "A method for detecting objects from video frames in real-time.",
+    "keywords": [
+      "object",
+      "detection",
+      "camera",
+      "real-time"
+    ],
+    "technology": "Artificial Intelligence",
+    "year": 2018,
+    "citations": [
+      "P006"
+    ]
+  },
+  {
+    "patent_id": "P005",
+    "title": "Deep Learning Image Recognition",
+    "abstract": "An image recognition system using deep learning techniques.",
+    "claims": "An image recognition system using a neural network to classify objects.",
+    "keywords": [
+      "image",
+      "recognition",
+      "deep learning",
+      "neural network"
+    ],
+    "technology": "Deep Learning",
+    "year": 2017,
+    "citations": [
+      "P007"
+    ]
+  }
+]
