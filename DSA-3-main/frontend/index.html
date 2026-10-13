@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patent Analytics Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">◈</span>
+            Patent<span>AI</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#dashboard">Dashboard</a>
+            <a href="#search">Patent Search</a>
+            <a href="#analytics">Analytics</a>
+        </div>
+
+        <div class="status">
+            <span></span> System Online
+        </div>
+    </nav>
+
+    <main id="dashboard">
+
+        <section class="hero">
+            <div>
+                <p class="eyebrow">DSA-BASED PATENT INTELLIGENCE</p>
+                <h1>Patent Prior Art &<br><span>Litigation Analytics</span></h1>
+                <p class="hero-text">
+                    Search patents, compare claims, analyze citation networks,
+                    rank prior art, and identify suitable examiners.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#search" class="primary-btn">Explore Patents →</a>
+                    <a href="#analytics" class="secondary-btn">View Analytics</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="core">P</div>
+                <div class="node node-one">AI</div>
+                <div class="node node-two">CV</div>
+                <div class="node node-three">DL</div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <div class="stat-icon">▣</div>
+                <div>
+                    <h2>05</h2>
+                    <p>Patents</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⌕</div>
+                <div>
+                    <h2>20+</h2>
+                    <p>Keywords</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">◎</div>
+                <div>
+                    <h2>05</h2>
+                    <p>Patent Nodes</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">♙</div>
+                <div>
+                    <h2>04</h2>
+                    <p>Examiners</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="search">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">DISCOVERY</p>
+                    <h2>Patent Search</h2>
+                </div>
+                <p>Search the patent knowledge base using keywords.</p>
+            </div>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Try: camera, vehicle, machine learning..."
+                >
+                <button onclick="searchPatent()">Search</button>
+            </div>
+
+            <div id="searchResults" class="results"></div>
+        </section>
+
+        <section class="section" id="analytics">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">DSA MODULES</p>
+                    <h2>Analytics Engine</h2>
+                </div>
+                <p>Core algorithms powering the system.</p>
+            </div>
+
+            <div class="module-grid">
+
+                <div class="module-card">
+                    <div class="module-number">01</div>
+                    <div class="module-icon">⌕</div>
+                    <h3>HashMap Search</h3>
+                    <p>Fast keyword-to-patent lookup using hashing.</p>
+                    <span>O(1) average lookup</span>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-number">02</div>
+                    <div class="module-icon">⌁</div>
+                    <h3>Trie Search</h3>
+                    <p>Prefix-based keyword discovery across patents.</p>
+                    <span>Prefix Search</span>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-number">03</div>
+                    <div class="module-icon">≈</div>
+                    <h3>Claim Similarity</h3>
+                    <p>Compare patent claims using Jaccard similarity.</p>
+                    <span>Similarity Ranking</span>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-number">04</div>
+                    <div class="module-icon">◉</div>
+                    <h3>Citation Graph</h3>
+                    <p>Analyze relationships using BFS and DFS.</p>
+                    <span>Graph Traversal</span>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-number">05</div>
+                    <div class="module-icon">★</div>
+                    <h3>Priority Queue</h3>
+                    <p>Rank patents according to relevance scores.</p>
+                    <span>Max Heap</span>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-number">06</div>
+                    <div class="module-icon">◇</div>
+                    <h3>Set Cover</h3>
+                    <p>Find patent references covering claim elements.</p>
+                    <span>Greedy Algorithm</span>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-number">07</div>
+                    <div class="module-icon">↯</div>
+                    <h3>Backtracking</h3>
+                    <p>Explore combinations of prior-art references.</p>
+                    <span>Combinatorial Search</span>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-number">08</div>
+                    <div class="module-icon">♙</div>
+                    <h3>Examiner Assignment</h3>
+                    <p>Match patents with examiners by expertise and workload.</p>
+                    <span>Assignment Engine</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section citation-section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">NETWORK ANALYSIS</p>
+                    <h2>Patent Citation Network</h2>
+                </div>
+                <p>Current citation relationships in the dataset.</p>
+            </div>
+
+            <div class="network">
+                <div class="patent-node main-node">P001</div>
+
+                <div class="connection connection-one"></div>
+                <div class="connection connection-two"></div>
+
+                <div class="patent-node p003">P003</div>
+                <div class="patent-node p005">P005</div>
+            </div>
+
+            <div class="network-labels">
+                <span>P001 → P003</span>
+                <span>P001 → P005</span>
+                <span>P003 → P005</span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="logo">Patent<span>AI</span></div>
+        <p>DSA Project • Patent Prior Art & Litigation Analytics Engine</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+<div id="analyticsPanel" class="analytics-panel">
+    <h2>Live Patent Analytics</h2>
+
+    <div class="analytics-card">
+        <h3>Total Patents</h3>
+        <p id="totalPatents">Loading...</p>
+    </div>
+
+    <div class="analytics-card">
+        <h3>Technology Distribution</h3>
+        <div id="technologyStats">Loading...</div>
+    </div>
+</div>
